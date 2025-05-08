@@ -1,0 +1,371 @@
+/* Estilos gerais da página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #000000; /* Preto */
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #4169E1; /* Azul vibrante para títulos principais */
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Banner principal */
+.banner {
+    padding: 0;
+    max-width: 100%;
+    position: relative;
+}
+
+.banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Seção de sinopse */
+.sinopse {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.sinopse--img {
+    flex: 1;
+    min-width: 560px;
+}
+
+.sinopse--img img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.sinopse--img img:hover {
+    transform: scale(1.03);
+}
+
+.sinopse--txt {
+    flex: 1.5;
+}
+
+.sinopse--txt h2 {
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+.sinopse--txt p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #e0e0e0;
+    text-align: justify;
+}
+
+/* Seção de elenco */
+.elenco {
+    padding-top: 80px;
+}
+
+.elenco--lista {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.elenco--integrantes {
+    flex: 1;
+    min-width: 200px;
+    max-width: 220px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.elenco--integrantes:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.elenco--integrantes img {
+    display: block;
+    height: auto;
+    object-fit: cover;
+}
+
+.elenco--integrantes h3, 
+.elenco--integrantes p {
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.elenco--integrantes h3 {
+    font-size: 1.1rem;
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+.elenco--integrantes p {
+    font-size: 0.9rem;
+    padding-bottom: 15px;
+    color: #e0e0e0;
+}
+
+/* Seção de prêmios */
+.premios {
+    padding-top: 80px;
+}
+
+.premios--lista {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.premios--trofeu {
+    flex: 1;
+    min-width: 150px;
+    max-width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.premios--trofeu:hover {
+    transform: translateY(-8px);
+}
+
+.premios--trofeu img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.premios--trofeu h3 {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #FFD700; /* Dourado para títulos de prêmios */
+    align-items: center;
+    vertical-align: middle;
+}
+
+.premios--trofeu--categoria {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    height: 3em;
+    font-weight: 600;
+    color: #FFD700; /* Dourado para títulos de prêmios */
+
+}
+
+.premios--trofeu--premiado {
+    font-size: 0.8rem !important;
+    color: #ffffff !important;
+    margin-top: 5px;
+}
+
+/* Seção de crítica */
+.critica {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.critica--txt {
+    background-color: rgba(25, 25, 50, 0.3);
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.critica--txt:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.critica--txt h3 {
+    color: #FFD700; /* Dourado, semelhante ao usado nos títulos dos prêmios */
+    font-size: 1.5rem;
+    margin: 0 0 5px 0;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.critica--txt h5 {
+    color: #9e9e9e;
+    font-size: 0.9rem;
+    margin: 0 0 15px 0;
+    font-style: italic;
+    font-weight: normal;
+    letter-spacing: 0.3px;
+}
+
+.critica--txt p {
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    position: relative;
+}
+
+.critica--txt p::before {
+    content: '"';
+    font-size: 2.5rem;
+    color: rgba(255, 215, 0, 0.2); /* Dourado transparente */
+    position: absolute;
+    left: -10px;
+    top: -15px;
+}
+
+.critica--txt p::after {
+    content: '"';
+    font-size: 2.5rem;
+    color: rgba(255, 215, 0, 0.2); /* Dourado transparente */
+    position: absolute;
+    margin-left: 5px;
+}
+
+/* Animação suave de fade-in para elementos da página */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.sinopse, .elenco, .premios, .critica {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Estilizando para diferentes seções em sequência */
+.elenco { animation-delay: 0.2s; }
+.premios { animation-delay: 0.4s; }
+.critica { animation-delay: 0.6s; }
+
+/* Media queries para responsividade */
+@media (max-width: 1024px) {
+    .elenco--lista, .premios--lista {
+        justify-content: center;
+    }
+    
+    .elenco--integrantes {
+        max-width: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sinopse {
+        flex-direction: column;
+    }
+    
+    .sinopse--txt h2 {
+        text-align: center;
+    }
+    
+    .blue-line {
+        border-top: 2px;
+    }
+    
+    .elenco--lista {
+        justify-content: center;
+    }
+    
+    .elenco--integrantes {
+        max-width: 160px;
+    }
+    
+    .premios--trofeu {
+        min-width: 130px;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 40px 15px;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    .elenco--integrantes {
+        min-width: 140px;
+    }
+    
+    .premios--lista {
+        gap: 20px;
+    }
+    
+    .premios--trofeu {
+        min-width: 120px;
+    }
+    
+    .critica--txt {
+        padding: 20px;
+    }
+    
+    .critica--txt h3 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Efeitos de hover e elementos interativos */
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #4169E1;
+    margin: 15px auto 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+h2:hover::after {
+    transform: scaleX(1);
+}
+
+/* Estilo de scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Cursor personalizado para dispositivos desktop */
+@media (min-width: 1025px) {
+    body {
+        cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="5" fill="%234169E1"/></svg>') 10 10, auto;
+    }
+}
